@@ -1,0 +1,26 @@
+﻿<Window x:Class="Feladat_nyílvántartó_Kállai_Tamás_Miklós11.B.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Feladat_nyílvántartó_Kállai_Tamás_Miklós11.B"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="900" Closed="Window_Closed" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="Feladatok listázása" HorizontalAlignment="Left" Margin="27.596,15,0,0" VerticalAlignment="Top" Width="118.426"/>
+        <ListBox x:Name="letezoFeladatok" HorizontalAlignment="Left" Height="182.872" Margin="27.596,41,0,0" VerticalAlignment="Top" Width="532.127" MouseUp="letezoFeladatok_MouseUp"/>
+        <ListBox x:Name="toroltFeladatok" HorizontalAlignment="Left" Height="123.51" Margin="27.596,257.362,0,0" VerticalAlignment="Top" Width="532.127"/>
+        <Label Content="Törölt elemek" HorizontalAlignment="Left" Margin="28.553,233.425,0,0" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Left" Height="0" Margin="-116.979,49.596,0,0" VerticalAlignment="Top" Width="5.745"/>
+        <TextBox x:Name="feladatNev" HorizontalAlignment="Left" Height="23" Margin="564.723,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168.83"/>
+        <Button x:Name="feladatHozzaad" Content="Új hozzáadása" HorizontalAlignment="Left" Margin="564.723,67.786,0,0" VerticalAlignment="Top" Width="168.83" Click="FeladatHozzaad_Click"/>
+        <Button x:Name="feladatMod" Content="Kijelölt feladat módosítása" HorizontalAlignment="Left" Margin="564.723,92.786,0,0" VerticalAlignment="Top" Width="168.83" Click="feladatMod_Click"/>
+        <Button x:Name="feladatTorol" Content="Kijelölt feladat törlése" HorizontalAlignment="Left" Margin="564.723,117.786,0,0" VerticalAlignment="Top" Width="168.83" Click="FeladatTorol_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="0" Margin="575.255,259.425,0,0" VerticalAlignment="Top" Width="0"/>
+        <Button x:Name="feladatVissza" Content="Kijelölt feladat visszaállítása" HorizontalAlignment="Left" Margin="564.723,259.425,0,0" VerticalAlignment="Top" Width="168.83" Click="feladatVissza_Click"/>
+        <Button x:Name="feladatVeglegtorol" Content="Kijelölt feladat végleges törlése" HorizontalAlignment="Left" Margin="564.723,284.425,0,0" VerticalAlignment="Top" Width="168.83" Click="feladatVeglegtorol_Click"/>
+        <Label Content="Feladat szövege: " HorizontalAlignment="Left" Margin="564.723,15,0,0" VerticalAlignment="Top"/>
+        <Label Content="Kállai Tamás Miklós 11.B" HorizontalAlignment="Left" Margin="723.659,384,0,0" VerticalAlignment="Top" FontStyle="Italic" FontFamily="Verdana"/>
+
+    </Grid>
+</Window>
